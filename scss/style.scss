@@ -1,7 +1,5 @@
-:root{
+$glowColor: rgb(20, 74, 99);
 
---glowColor: rgb(201, 30, 30);
-}
 
 
 
@@ -49,7 +47,7 @@ body {
     width:100%;
     height:100%;
     border-radius:50%;
-    background:var(--glowColor);
+    background:$glowColor;
     transition: .5s;
     transform: scale(0.9);
     z-index: -1;
@@ -57,12 +55,12 @@ body {
   
   ul li a:hover:before {
     transform: scale(1.2);
-    box-shadow: 0 0 15px var(--glowColor);
+    box-shadow: 0 0 15px $glowColor;
     filter: blur(3px);
   }
   
   ul li a:hover {
-    color: var(--glowColor);
-    box-shadow: 0 0 15px var(--glowColor);
-    text-shadow: 0 0 15px var(--glowColor);
+    color: $glowColor;
+    box-shadow: 0 0 15px $glowColor;
+    text-shadow: 0 0 15px $glowColor;
   }
