@@ -1,3 +1,11 @@
+:root{
+
+--glowColor: rgb(201, 30, 30);
+}
+
+
+
+
 body {
     margin:0;
     padding:0;
@@ -22,13 +30,13 @@ body {
   ul li a {
     position: relative;
     display: block;
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     text-align: center;
-    line-height: 60px;
+    line-height: 80px;
     background: #171515;
     border-radius: 50%;
-    font-size: 30px;
+    font-size: 40px;
     color: #666;
     transition: .5s;
   }
@@ -41,7 +49,7 @@ body {
     width:100%;
     height:100%;
     border-radius:50%;
-    background: #d35400;
+    background:var(--glowColor);
     transition: .5s;
     transform: scale(0.9);
     z-index: -1;
@@ -49,12 +57,12 @@ body {
   
   ul li a:hover:before {
     transform: scale(1.2);
-    box-shadow: 0 0 15px #d35400;
+    box-shadow: 0 0 15px var(--glowColor);
     filter: blur(3px);
   }
   
   ul li a:hover {
-    color: #ffa502;
-    box-shadow: 0 0 15px #d35400;
-    text-shadow: 0 0 15px #d35400;
+    color: var(--glowColor);
+    box-shadow: 0 0 15px var(--glowColor);
+    text-shadow: 0 0 15px var(--glowColor);
   }
